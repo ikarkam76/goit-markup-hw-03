@@ -27,10 +27,19 @@ body {
     text-decoration: none;
 }
 
-.list {
+.list, .list-footer {
     list-style-type: none;
 }
 
+
+.list {
+    display: flex;
+}
+
+.list-site-nav .item:not(:last-child),
+.list-contact .item:not(:last-child){
+margin-right:  50px;
+}
 
 /* header and footer */
 
@@ -68,9 +77,9 @@ body {
     color: var(--primary-text-color);
 }
 .contact-footer {
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     color: var(--footer-contact-text-color);
 }
 .site-nav {
