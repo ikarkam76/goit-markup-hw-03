@@ -53,6 +53,11 @@ h1, h2, h3, p, ul {
     padding: 0 15px;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -236,10 +241,6 @@ margin-left:  50px;
 
 /* section features */
 
-.feature {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .feature-list {
     display: flex;
@@ -257,10 +258,6 @@ margin-left:  50px;
 
 /* section specific */
 
-.specific {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .specific-list {
     display: flex;
@@ -283,10 +280,6 @@ margin-left:  50px;
 
 /* section team */
 
-.team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .team-list {
     display: flex;
@@ -305,10 +298,6 @@ margin-left:  50px;
 
 /* Portfolio */
 
-.work {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 /* filter-list */
 
