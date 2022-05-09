@@ -236,10 +236,14 @@ margin-left:  50px;
 
 /* section features */
 
+.feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .feature-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 94px;
 }
 
 .feature-list .item {
@@ -253,8 +257,9 @@ margin-left:  50px;
 
 /* section specific */
 
-.specific-title {
-    margin-top: 94px;
+.specific {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .specific-list {
@@ -278,8 +283,9 @@ margin-left:  50px;
 
 /* section team */
 
-.team-title {
-    margin-top: 188px;
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-list {
@@ -299,6 +305,11 @@ margin-left:  50px;
 
 /* Portfolio */
 
+.work {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* filter-list */
 
 
@@ -306,7 +317,6 @@ margin-left:  50px;
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 94px;
 }
 
 .filter-button {
@@ -327,7 +337,6 @@ margin-left:  50px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 34px;
-    margin-bottom: 94px;
 }
 
 .work-list .item {
