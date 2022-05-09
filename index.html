@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Студия 2.0</title>
 </head>
 <body>
 
-    <header class="header ">
-
-        <div class="container">
+    <header class="header-nav container">
             <nav class="nav">
                 <a href="" class="link header-logo"><span class="logo-item">Web</span>Studio</a>
                 <ul class="list list-site-nav">
@@ -30,41 +27,42 @@
                 <li class="item"><a href="mailto:info@devstudio.com" class="link contact contact-header">info@devstudio.com</a></li>
                 <li class="item"><a href="tel:+380961111111" class="link contact contact-header">+38 096 111 11 11</a></li>
             </ul>
-
-        </div>
     </header>  
 
     <main>
-            <section class="hero">
-                    <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="button hero-button">Заказать услугу</button>
-            </section>
-           
-            
-            <section class="">
+
+        <section class="hero">
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="button hero-button">Заказать услугу</button>
+        </section>
+
+        <section class="">
                 <h2 class="section-title">Наши преимущества</h2>
-                <ul class="list">
-                    <li>
+            <div class="container">
+                <ul class="list feature-list">
+                    <li class="item">
                         <h3 class="third-title">Внимание к деталям</h3>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li>
+                    <li class="item">
                         <h3 class="third-title">Пунктуальность</h3>
                         <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li>
+                    <li class="item">
                         <h3 class="third-title">Планирование</h3>
                         <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li>
+                    <li class="item">
                         <h3 class="third-title">Современные технологии</h3>
                         <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
-            </section>
-            
-            <section class="">
+            </div>
+        </section>
+
+        <section class="">
                 <h2 class="section-title">Чем мы занимаемся</h2>
+            <div class="container">
                 <ul class="list">
                     <li>
                         <img src="./Images/computer.jpg" alt="компьютер" width="370" height="294">
@@ -76,10 +74,12 @@
                         <img src="./Images/tablet.jpg" alt="планшет" width="370" height="294">
                     </li>
                 </ul>
-            </section>
-            
-            <section class="">
+            </div>
+        </section>
+
+        <section class="">
                 <h2 class="section-title">Наша команда</h2>
+            <div class="container">
                 <ul class="list">
                     <li>
                         <img src="./Images/proddes.jpg" alt="Дизайнер продукта" width="270" height="260">
@@ -102,19 +102,23 @@
                         <p lang="en" class="member-position">UI Designer</p>
                     </li>
                 </ul>
-            </section>
+            </div>
+        </section>
 
     </main>
 
     <footer class="footer">
-        <a href="" class="link footer-logo"><span class="logo-item">Web</span>Studio</a>
-        <address class="footer-address">
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="list-footer">
-                <li><a href="mailto:info@devstudio.com" class="link contact contact-footer">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link contact contact-footer">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container-footer">
+            <a href="" class="link footer-logo"><span class="logo-item">Web</span>Studio</a>
+            <address class="footer-address">
+                <p>г. Киев, пр-т Леси Украинки, 26</p>
+                <ul class="list-footer">
+                    <li><a href="mailto:info@devstudio.com" class="link contact contact-footer">info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111" class="link contact contact-footer">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
+        
     </footer>
  
 </body>
