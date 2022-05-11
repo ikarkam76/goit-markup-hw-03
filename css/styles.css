@@ -26,9 +26,25 @@ body {
     letter-spacing: 0.03em;
 }
 
+/* main options */
+
 h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .link {
@@ -40,15 +56,6 @@ h1, h2, h3, p, ul {
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-}
-
-.container-footer {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -60,19 +67,45 @@ h1, h2, h3, p, ul {
     padding-bottom: 94px;
 }
 
+.button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus,
+.filter-button:hover,
+.filter-button:focus {
+    background-color: var(--button-active-color);
+    color: var(--button-text-active-color);
+}
+
+/* header and footer */
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
 .nav {
     display: flex;
     align-items: center;
 }
 
 .header-nav {
-    align-items: center;
     border-bottom: 1px solid var(--header-bottom-border);
 }
 
 .list-site-nav {
     display: flex;
     margin-left: 93px;
+}
+
+.container-footer {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
 }
 
 .list-contact {
@@ -99,8 +132,6 @@ h1, h2, h3, p, ul {
 margin-left:  50px;
 }
 
-/* header and footer */
-
 .header-logo, .footer-logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -119,12 +150,21 @@ margin-left:  50px;
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+
     background-color: var(--secondary-background-color);
 }
 .footer-address {
     margin-top: 20px;
     font-style: normal;
+
     color: var(--footer-address-text-color);
+}
+.address {
+    margin-bottom: 9px;
+}
+
+.list-footer .item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .contact {
@@ -136,6 +176,7 @@ margin-left:  50px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
     color: var(--primary-text-color);
 }
 .contact-footer {
@@ -143,6 +184,7 @@ margin-left:  50px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
     color: var(--footer-contact-text-color);
 }
 .site-nav {
@@ -150,6 +192,7 @@ margin-left:  50px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
     color: var(--secondary-title-text-color);
 }
 .contact:hover, .contact:focus,
@@ -157,24 +200,37 @@ margin-left:  50px;
     color: var(--link-active-color);
 }
 
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--secondary-title-text-color);
+}
+
 /* hero */
 
 .hero {
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     background-color: var(--secondary-background-color);
 }
-
 
 .hero-title {
     width: 696px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 30px;
 
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
     color: var(--primary-title-text-color);
 }
 
@@ -183,6 +239,7 @@ margin-left:  50px;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
     color: var(--secondary-title-text-color);
 }
 
@@ -190,22 +247,22 @@ margin-left:  50px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+
     color: var(--secondary-title-text-color);
 }
 
+/* section team */
+
+.member {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .member-name {
-    margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-}
-
-.product-name {
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    margin-top: 20px;
 }
 
 .member-position {
@@ -221,29 +278,11 @@ margin-left:  50px;
     margin-top: 4px;
 }
 
-/* buttons */
-
-.button {
-    font-family: inherit;
-    cursor: pointer;
-}
-
-.hero-button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: var(--secondary-title-text-color);
-}
-
-.hero-button:hover, .hero-button:focus,
-.filter-button:hover, .filter-button:focus {
-    background-color: var(--button-active-color);
-    color: var(--button-text-active-color);
-}
-
 /* section features */
 
+.section-features {
+    padding-top: 94px;
+}
 
 .feature-list {
     display: flex;
@@ -268,7 +307,7 @@ margin-left:  50px;
     margin-top: 50px;
 }
 
-.specific-img {
+.img {
     display: block;
 }
 
@@ -283,6 +322,9 @@ margin-left:  50px;
 
 /* section team */
 
+.section-team {
+    background-color: var(--sections-background-color);
+}
 
 .team-list {
     display: flex;
@@ -299,23 +341,29 @@ margin-left:  50px;
     margin-right: 0;
 }
 
-/* Portfolio */
-
+/* ---------Portfolio------------ */
 
 /* filter-list */
 
 
 .filter-list {
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    justify-content: center;
 }
 
 .filter-button {
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center;
+
     color: var(--secondary-title-text-color);
 }
 
@@ -324,6 +372,22 @@ margin-left:  50px;
 }
 
 /* work-list */
+
+.product {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-left: 1px solid var(--work-list-border);
+    border-right: 1px solid var(--work-list-border);
+    border-bottom: 1px solid var(--work-list-border);
+}
+
+.product-name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
 
 .work-list {
     display: flex;
@@ -335,8 +399,6 @@ margin-left:  50px;
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-    border-bottom: 1px solid var(--work-list-border);
-    padding-bottom: 20px;
 }
 
 .work-list .item:nth-child(3n) {

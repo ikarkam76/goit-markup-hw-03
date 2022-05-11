@@ -14,7 +14,7 @@
 <body>
 
     <header class="header-nav">
-           <div class="container">
+           <div class="container header-container">
                 <nav class="nav">
                     <a href="" class="link header-logo"><span class="logo-item">Web</span>Studio</a>
                     <ul class="list list-site-nav">
@@ -38,8 +38,8 @@
                 <button type="button" class="button hero-button">Заказать услугу</button>
         </section>
 
-        <section class="section">
-                <h2 class="section-title">Наши преимущества</h2>
+        <section class="section-features">
+                <h2 class="section-title visually-hidden">Наши преимущества</h2>
             <div class="container">
                 <ul class="list feature-list">
                     <li class="item">
@@ -62,46 +62,54 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section section-specific">
                 <h2 class="section-title specific-title">Чем мы занимаемся</h2>
             <div class="container">
                 <ul class="list specific-list">
                     <li class="item">
-                        <img class="specific-img" src="./Images/computer.jpg" alt="компьютер" width="370" height="294">
+                        <img class="img" src="./Images/computer.jpg" alt="компьютер" width="370" height="294">
                     </li>
                     <li class="item">
-                        <img class="specific-img" src="./Images/notebook.jpg" alt="ноутбук" width="370" height="294">
+                        <img class="img" src="./Images/notebook.jpg" alt="ноутбук" width="370" height="294">
                     </li>
                     <li class="item">
-                        <img class="specific-img" src="./Images/tablet.jpg" alt="планшет" width="370" height="294">
+                        <img class="img" src="./Images/tablet.jpg" alt="планшет" width="370" height="294">
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section section-team">
                 <h2 class="section-title team-title">Наша команда</h2>
             <div class="container">
                 <ul class="list team-list">
                     <li class="item">
-                        <img src="./Images/proddes.jpg" alt="Дизайнер продукта" width="270" height="260">
-                        <h3 class="third-title member-name">Игорь Демьяненко</h3>
-                        <p lang="en" class="member-position">Product Designer</p>
+                        <img class="img" src="./Images/proddes.jpg" alt="Дизайнер продукта" width="270" height="260">
+                        <div class="member">
+                            <h3 class="third-title member-name">Игорь Демьяненко</h3>
+                            <p lang="en" class="member-position">Product Designer</p>
+                        </div>
                     </li>
                     <li class="item">
-                        <img src="./Images/frontdev.jpg" alt="Разработчик" width="270" height="260">
-                        <h3 class="third-title member-name">Ольга Репина</h3>
-                        <p lang="en" class="member-position">Frontend Developer</p>
+                        <img class="img" src="./Images/frontdev.jpg" alt="Разработчик" width="270" height="260">
+                        <div class="member">
+                            <h3 class="third-title member-name">Ольга Репина</h3>
+                            <p lang="en" class="member-position">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="item">
-                        <img src="./Images/marketing.jpg" alt="Маркетолог" width="270" height="260">
-                        <h3 class="third-title member-name">Николай Тарасов</h3>
-                        <p lang="en" class="member-position">Marketing</p>
+                        <img class="img" src="./Images/marketing.jpg" alt="Маркетолог" width="270" height="260">
+                        <div class="member">
+                            <h3 class="third-title member-name">Николай Тарасов</h3>
+                            <p lang="en" class="member-position">Marketing</p>
+                        </div>
                     </li>
                     <li class="item">
-                        <img src="./Images/uides.jpg" alt="Дизайнер интерфейса" width="270" height="260">
-                        <h3 class="third-title member-name">Михаил Ермаков</h3>
-                        <p lang="en" class="member-position">UI Designer</p>
+                        <img class="img" src="./Images/uides.jpg" alt="Дизайнер интерфейса" width="270" height="260">
+                        <div class="member">
+                            <h3 class="third-title member-name">Михаил Ермаков</h3>
+                            <p lang="en" class="member-position">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -113,10 +121,10 @@
         <div class="container-footer">
             <a href="" class="link footer-logo"><span class="logo-item">Web</span>Studio</a>
             <address class="footer-address">
-                <p>г. Киев, пр-т Леси Украинки, 26</p>
+                <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
                 <ul class="list-footer">
-                    <li><a href="mailto:info@devstudio.com" class="link contact contact-footer">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="link contact contact-footer">+38 096 111 11 11</a></li>
+                    <li class="item"><a href="mailto:info@devstudio.com" class="link contact contact-footer">info@devstudio.com</a></li>
+                    <li class="item"><a href="tel:+380961111111" class="link contact contact-footer">+38 096 111 11 11</a></li>
                 </ul>
             </address>
         </div>
